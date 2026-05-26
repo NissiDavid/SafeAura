@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeAura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>SafeAura</h1>
+    <p class="tagline">Women Safety Companion</p>
+    <h3 id="clock"></h3>
+
+    <div class="features">
+        <div class="card">Emergency SOS</div>
+        <div class="card">Fake Call</div>
+        <div class="card">Trusted Contact</div>
+        <div class="card">Safety Tips</div>
+    </div>
+
+    <h2>Trusted Contact</h2>
+
+    <input type="text" id="name" placeholder="Enter contact name">
+    <input type="text" id="number" placeholder="Enter phone number">
+
+    <h2>About SafeAura</h2>
+<p>
+SafeAura is a women safety web app designed with emergency support features like trusted contacts, SOS alert, fake call, live location, and safety tips.
+</p>
+
+    <div class="buttons">
+        <button onclick="saveContact()">Save Contact</button>
+         <button onclick="fakeCall()">Fake Call</button>
+        <button onclick="getLocation()">Live Location</button>
+        <button onclick="sosAlert()">Emergency SOS</button>
+    </div>
+<div id="fakeScreen" class="fake-screen">
+    <h2>📞 Incoming Call...</h2>
+    <p>Mom Calling</p>
+
+    <button onclick="endCall()">Accept</button>
+    <button onclick="endCall()">Reject</button>
+</div>
+<footer>
+    <p>Built by Nissi David 💖</p>
+</footer>
+
+
+    <p id="output"></p>
+</div>
+
+<script src="script.js"></script>
+ 
+</body>
+</html>
